@@ -1,24 +1,34 @@
 {
-  "name": "mellatone-yadda",
-  "version": "0.0.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "name": "ember-cli-yadda",
+  "version": "0.2.1",
+  "description": "Ember-cli yadda addon for running Gherkin acceptance tests",
   "keywords": [
-    "ember-addon"
+    "ember-addon",
+    "yadda",
+    "bdd",
+    "acceptance testing",
+    "gherkin",
+    "cucumber",
+    "specifications",
+    "features"
   ],
   "license": "MIT",
-  "author": "",
+  "author": "CURIT, remkoboschker, albertjan",
   "directories": {
     "doc": "doc",
     "test": "tests"
   },
-  "repository": "",
+  "repository": "github.com/curit/ember-cli-yadda",
   "scripts": {
     "build": "ember build",
     "start": "ember server",
     "test": "ember try:each"
   },
   "dependencies": {
-    "ember-cli-babel": "^6.3.0"
+    "ember-browserify": "^1.2.0",
+    "ember-cli-babel": "^6.3.0",
+    "inflected": "^1.1.6",
+    "yadda": "*"
   },
   "devDependencies": {
     "broccoli-asset-rev": "^2.4.5",
