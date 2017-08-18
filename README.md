@@ -72,19 +72,19 @@ This will generate the following files in your project directory:
 /tests/acceptance/make-a-feature.feature
 ```
 
-When using Mocha as your test framework, you have the option to run each scenario's step as a separate test, with all steps grouped within a Mocha `describe` block. If a step is failing, all following steps of that scenario will then be marked as pending. This way you get a much clearer picture on where (which step) a possible failure is happening. To opt in into that mode, use the `separateSteps` config option. 
- 
+When using Mocha as your test framework, you have the option to run each scenario's step as a separate test, with all steps grouped within a Mocha `describe` block. If a step is failing, all following steps of that scenario will then be marked as pending. This way you get a much clearer picture on where (which step) a possible failure is happening. To opt in into that mode, use the `separateSteps` config option.
+
  ```js
  // ember-cli-build.js
- 
+
      var app = new EmberApp({
          'ember-cli-yadda': {
              'separateSteps': true
          }
      });
- 
+
  ```
- 
+
  *Note that this mode is currently not available when you are using QUnit as your test framework!*
 
 ##### Unit tests
@@ -163,7 +163,7 @@ export default function(assert) {
 
 For example, creating a feature file for a component named `form-select`, you would use `ember g feature-unit components/form-select`
 
-You can skip tests by adding the `@ignore` annotation above the Scenario or Feature. 
+You can skip tests by adding the `@ignore` annotation above the Scenario or Feature.
 
 ## Important information
 ##### Scope and helpers
